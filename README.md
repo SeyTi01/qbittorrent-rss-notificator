@@ -18,7 +18,7 @@ To install the BurntToastNotification module in PowerShell, follow these steps:
 2. Run the following command to install the module:
 
 ```powershell
-`Install-Module -Name BurntToast`
+Install-Module -Name BurntToast
 ```
 
 ## Configuration
