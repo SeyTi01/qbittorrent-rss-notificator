@@ -1,9 +1,9 @@
 @echo off
 setlocal
-set "tags=%~1"
-set "name=%~2"
+set "name=%~1"
+set "tags=%~2"
 
-echo %tags% | findstr /C:"notification" >nul 2>&1
+echo %tags% | findstr /C:"Notification" >nul 2>&1
 
 if errorlevel 1 (
     echo Tag not found, exiting.
@@ -12,6 +12,6 @@ if errorlevel 1 (
 
 echo Tag found, sending notification.
 
-powershell.exe -noexit "%~dp0\sendNotification.ps1" -name '%name%'
+powershell.exe -ExecutionPolicy Bypass -noexit "%~dp0\sendNotification.ps1" -name '%name%'
 
 endlocal
