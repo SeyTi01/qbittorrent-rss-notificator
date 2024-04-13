@@ -1,6 +1,6 @@
 # qBittorrent RSS Notificator
 
-This script is designed to provide Windows notifications for added torrents in qBittorrent using the BurntToastNotification module in PowerShell.
+This script provides Windows notifications for torrents that are added by specific RSS Downloader rules in qBittorrent using the BurntToastNotification module in PowerShell.
 
 ## Prerequisites
 
