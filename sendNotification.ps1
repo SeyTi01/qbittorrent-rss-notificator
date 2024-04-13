@@ -3,4 +3,4 @@ param (
     [string]$iconPath = "$PSScriptRoot\icon.png"
 )
 
-New-BurntToastNotification -Text "Added Torrent: $name" -AppLogo $iconPath
+New-BurntToastNotification -Text "Added Torrent", $name -AppLogo $iconPath
